@@ -5,6 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh '''
+                uname -a
+                ls -lrt
+                '''
             }
         }
         stage('Test') {
