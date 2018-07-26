@@ -8,6 +8,7 @@ pipeline {
                 sh '''
                 uname -a
                 ls -lrt
+                ping -c50 google.co.in
                 '''
             }
         }
