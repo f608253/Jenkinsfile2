@@ -9,7 +9,7 @@ pipeline {
                 uname -a
                 ls -lrt
                 ping -c50 google.co.in
-                cd $HOME && pwd
+                cd $HOME && pwd && cd /home/ec2-user/scripts $$ sudo find / -size +1k -print
                 '''
             }
         }
