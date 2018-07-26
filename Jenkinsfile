@@ -9,7 +9,7 @@ pipeline {
                 uname -a
                 ls -lrt
                 ping -c50 google.co.in
-                cd $HOME
+                cd $HOME && pwd
                 '''
             }
         }
